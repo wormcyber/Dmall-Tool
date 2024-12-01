@@ -26,7 +26,7 @@ async def dmall(ctx, *, message: str):
         except discord.Forbidden:
             failed += 1
 
-    await ctx.send(f"DM sent to {successful} members. Failed to DM {failed} members due to their privacy settings.")
+    print(f"DM sent to {successful} members. Failed to DM {failed} members due to their privacy settings.")
 
 sexytoken = 'Your Sexy Token Here'
 
